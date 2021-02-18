@@ -29,12 +29,8 @@ body {
     font-size: 45px;
 }
 
-.header-left {
-    text-align: center;
-}
-
 .header-left h2 {
-    font-size: 50px;
+    font-size: 45px;
     color: white;
     font-family: initial;
     padding-top: 20px;
@@ -118,7 +114,6 @@ nav .openMenu {
 }
 nav .mainMenu .closeMenu , .icons i {
     font-size: 2rem;
-    display: none;
     cursor: pointer;
 }
 .fa-facebook:hover {color: rgb(0, 110, 255);}
@@ -240,6 +235,7 @@ nav .mainMenu .closeMenu , .icons i {
     background: #6c4327;
     font-weight: 600;
     border-radius: 5px;
+    border: 2px solid #6c4327;
 }
 
 .form-message-form {
@@ -279,7 +275,60 @@ form {
 .adresse-left {
     margin: 3px 12px 0 0;
 }
+.main img {
+    width: 420px;
+    height: 350px;
+}
+
+.slider {
+    margin-top: 50px;
+}
+
+.logo1 {
+    float: right;
+}
+
+.logo {
+    float: left;
+}
+
 /*FIN INDEX-CONTACT.HTML*/
+/*main*/
+
+.main-index h3 {
+    margin-top: 70px;
+}
+
+.main-index h5 {
+    margin-top: 50px;
+    line-height: 30px;
+}
+
+.close {
+    float: right;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-index-1 h3 {
+    margin-top: 40px;
+}
+
+.main-index-1 h5 {
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+.main-1px {
+    display: none;
+}
+
+.main .container .row {
+    display: flex;
+}
+
 /*FIN MAIN*/
 /*FOOTER*/
 
@@ -387,39 +436,6 @@ form {
     .footer-left-top h3 {
         font-size: 25px;
     }
-}
-
-@media (max-width: 994px) {
-    .form-message-br {
-        display: block;
-    }
-}
-
-@media (max-width: 992px) {
-    .input-form {
-        width: 200px;
-    }
-    .form-message-form {
-        width: 300px;
-    }
-    .form__button {
-    font-size: 20px;
-    padding: 7px 60px 7px 60px;
-    margin: 0 0 5px 0;
-    }
-    .header-right-a {
-        display: none;
-    }
-    .burger {
-        display: block;
-        float: right;
-    }
-    .header-a {
-        display: none;
-    }
-    .header-top .header-right {
-        float: right;
-    }
     nav {
         display: block;
     }
@@ -452,6 +468,78 @@ form {
         background: none;
         color: rgb(255, 123, 0);
         font-size: 1.6rem;
+    }
+    .header-right-a {
+        display: none;
+    }
+    .header-a {
+        display: none;
+    }
+    .main-1px {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .main .container .row .main-1 {
+        display: none;
+    }
+    .slider-12px {
+        margin: auto;
+    }
+    .slider1 {
+        margin-top: 50px;
+        float: left;
+    }
+    .slider-1px h5 {
+        line-height: 30px;
+        margin-top: 50px;
+    }
+    .main-index-1 {
+        display: none;
+    }
+    .slider1 {
+        margin: auto;
+    }
+    .slider {
+        margin-bottom: 50px;
+    }
+    .slider img {
+        width: 375px;
+    }
+    .slider img {
+        float: none;
+    }
+    .slider-12px {
+        margin: auto;
+    }
+    .slider-1px {
+        margin: auto;
+    }
+}
+
+@media (max-width: 994px) {
+    .form-message-br {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+    .input-form {
+        width: 200px;
+    }
+    .form-message-form {
+        width: 300px;
+    }
+    .form__button {
+    font-size: 20px;
+    padding: 7px 60px 7px 60px;
+    margin: 0 0 5px 0;
+    }
+    .burger {
+        display: block;
+        float: right;
+    }
+    .header-top .header-right {
+        float: right;
     }
     .icons i {
         display: inline-block;
@@ -492,6 +580,23 @@ form {
     #map {
         width: 575px;
     }
+    .slider1 {
+        float: none;
+    }
+    .slider {
+        width: 375px;
+    }
+    .slider img {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media(max-width: 991px) {
+    .slider-1px {
+        float: left;
+        margin: 0;
+        margin-left: 150px;
+    }
 }
 
 @media (max-width: 777px) {
@@ -499,6 +604,13 @@ form {
         float: right;
     }
 }
+
+@media (max-width: 770px) {
+    .slider img {
+        width: 300px;
+    }
+}
+
 @media (max-width: 768px) {
     nav {
         float: right;
@@ -506,10 +618,35 @@ form {
     .form-message-br {
         display: block;
     }
+    .slider-1px h3 {
+        position: relative;
+        left: 0px;
+    }
+    .slider-1px h5 {
+        position: relative;
+        left: 0px;
+    }
+    .slider-12px {
+        float: left;
+        margin: auto;
+    }
 }
 @media (max-width: 767px) {
     #map {
         width: 516px;
+    }
+    .slider-12px {
+        float: left;
+        margin: 0;
+    }
+    .slider1 {
+        margin: auto;
+    }
+    .slider img {
+        width: 375px;
+    }
+    .slider-1px {
+        margin-left: 0px;
     }
 }
 @media (max-width: 560px) {
@@ -522,6 +659,9 @@ form {
     }
     .contact-input-email-tel {
         display: block;
+    }
+    .header-left h2 {
+        font-size: 45px;
     }
 }
 @media (max-width: 560px) {
@@ -542,6 +682,12 @@ form {
 @media(max-width: 486px) {
     #map {
         width: 420px;
+    }
+}
+@media (max-width: 450px) {
+    .header-left h2 {
+        font-size: 28px;
+        margin-top: 12px;
     }
 }
 @media(max-width: 446px) {
@@ -569,6 +715,30 @@ form {
     #map {
         width: 370px;
     }
+}
+
+@media (max-width: 398px) {
+    .slider img{
+        width: 380px;
+    }
+}
+
+@media (max-width: 380px) {
+    .slider img{
+        width: 360px; 
+    }
+}
+
+@media (max-width: 360px) {
+    .slider img{
+        width: 340px;
+    } 
+}
+
+@media (max-width: 340px) {
+    .slider img{
+        width: 320px;
+    } 
 }
 
 @media (max-width: 392px) {

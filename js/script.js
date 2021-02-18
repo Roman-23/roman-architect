@@ -49,3 +49,20 @@ function show() {
 function close() {
 	mainMenu.style.top = '-100%';
 }
+
+
+$(function() {
+	$('.rev-slider').slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+	});
+});
+
+$(function() {
+	$('.rev-slider1').slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+	})
+}) 
